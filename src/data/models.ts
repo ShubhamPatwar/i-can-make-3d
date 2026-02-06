@@ -6,6 +6,7 @@ import industrialCratesImg from '@/assets/models/industrial-crates.jpg';
 import muscleCarImg from '@/assets/models/muscle-car.jpg';
 import katanaCollectionImg from '@/assets/models/katana-collection.jpg';
 import cyberpunkApartmentImg from '@/assets/models/cyberpunk-apartment.jpg';
+import mustangImg from '@/assets/models/scifi-mustang.jpg';
 
 export interface Model3D {
   id: string;
@@ -185,6 +186,25 @@ export const models: Model3D[] = [
       fileSize: '280 MB',
     },
     new: true,
+  },
+
+  {
+    id: '9',
+    name: 'Mustang Car',
+    slug: 'mustang-speed',
+    price: 10.99,
+    category: 'cars',
+    description: 'Fastest car in the world ',
+    shortDescription: 'test the ride',
+    thumbnail: mustangImg,
+    images: [mustangImg],
+    modelUrl: '/models/mustang-car.glb',
+    techDetails: {
+      format: 'GLB, FBX',
+      polyCount: '2,500 tris each',
+      textures: '2K PBR',
+      fileSize: '20 MB',
+    },
   },
 ];
 
